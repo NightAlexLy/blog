@@ -6,9 +6,9 @@ tag:
    - hexo
 ---
 
-#### 灵感 ####
+#### 灵感 ####    
 
-     　　　最近认证阿里云学生用户，参与ESC服务9.9元/月的活动，准备先搭建一个博客网站，写写自已的心得以及经验。之前也搭建过网站，最后由于个人没时间（没时间是假的，就是懒。哈哈）的原因导致最后服务器到期，域名到期被回收勒。累觉不爱楽、
+　　　     最近认证阿里云学生用户，参与ESC服务9.9元/月的活动，准备先搭建一个博客网站，写写自已的心得以及经验。之前也搭建过网站，最后由于个人没时间（没时间是假的，就是懒。哈哈）的原因导致最后服务器到期，域名到期被回收勒。累觉不爱楽、
      　　　
 　　　     新站准备通过Hexo来构建（Hexo是基于NodeJs），文章通过github托管。**通过脚本来实现自动更新，自动发布等功能**。也采用Linux命令别名来简化步骤。做一个有效率的攻城狮，不做重复的事情，不浪费时间。
 　　　     
@@ -25,8 +25,7 @@ tag:
 　　　如我在服务中添加的别名：
 
 ```
-     
-     alias vwc='vi /opt/blog/_config.yml'  #编辑站点文件
+	 alias vwc='vi /opt/blog/_config.yml'  #编辑站点文件
 	 alias vwtc='vi /opt/blog/themes/next/_config.yml'  #编辑主题文件
 	 alias cdblog='cd /opt/blog'    #切换到博客目录
 	 alias hs='nohup hexo server -p 80 >/dev/null 2>&1 &'  #启动hexo
@@ -156,11 +155,11 @@ initUI
 
 　　如我配置的每天23:30自动部署：
 
-　　30 23 * * * root `sh /opt/blog/hexo-deploy.sh >> /tmp/test.txt`
+　　`30 23 * * * root "sh /opt/blog/hexo-deploy.sh >> /tmp/test.txt"`
 
 - 遇到的坑
     
 　　　 Q ： crontab内环境变量与Shell环境变量不一致？
 　　　 A ： 比如，我在脚本中使用hexo命令，但是hexo命令在/usr/local/bin下面。crontab环境的PATH没有指定这个目录配置，导致这个命令差找不到。自动化操作一致不成功，解决办法是在`/etc/profile`中的PATH后面追加`:/usr/local/bin`。在脚本部署的头部添加`. /etc/profile`即可。
 　　　 Q：Linux命令自动交互？`expect command not found`
-　　　 A :  yum install -y expect
+　　　 A :  `yum install -y expect`
