@@ -10,7 +10,7 @@ tag:
 
 　　　     最近认证阿里云学生用户，参与ESC服务器9.9元/月的活动，准备先搭建一个博客网站，写写自已的心得以及经验。之前也搭建过网站，最后由于个人没时间（没时间是假的，就是懒。哈哈）的原因导致最后服务器到期，域名到期被回收。累觉不爱楽、
      　　　
-　　　     新站准备通过Hexo来构建（Hexo是基于NodeJs），文章通过github托管。**通过脚本来实现自动更新，自动发布等功能**。也采用Linux命令别名来简化步骤。做一个有效率的攻城狮，`不做重复的事情，不浪费时间`。
+　　　     新站准备通过Hexo来构建（Hexo是基于NodeJs），文章通过github托管。**通过脚本来实现自动更新，自动发布等功能**。也采用Linux命令别名来简化步骤。做一个有效率的攻城狮，**不做重复的事情，不浪费时间**。
 　　　     
      
 #### linux 命令名 ####
@@ -160,6 +160,10 @@ initUI
 - 遇到的坑
     
 　　　 Q ： crontab内环境变量与Shell环境变量不一致？
-　　　 A ： 比如，我在脚本中使用hexo命令，但是hexo命令在/usr/local/bin下面。crontab环境的PATH没有指定这个目录配置，导致这个命令差找不到。自动化操作一致不成功，解决办法是在`/etc/profile`中的PATH后面追加`:/usr/local/bin`。在脚本部署的头部添加`. /etc/profile`即可。
-　　　 Q：Linux命令自动交互？`expect command not found`
-　　　 A :  `yum install -y expect`
+　　　 A ： 比如，我在脚本中使用hexo命令，但是hexo命令在/usr/local/bin下面。crontab环境的PATH没有指定这个目录配置，导致这个命令差找不到。自动化操作一致不成功，解决办法是在`/etc/profile`中的PATH后面追加`:/usr/local/bin`。在脚本部署的头部添加`. /etc/profile`即可。   
+
+　　　 Q：Linux命令自动交互？`expect command not found`  
+　　　 A :  `yum install -y expect`   
+
+　　　 Q：执行脚本，直接返回killed,脚本直接结束？
+　　　 A：有可能`kill -9`的时候，杀死了不存在的进程或者异常进程导致。
