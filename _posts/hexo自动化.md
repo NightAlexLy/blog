@@ -6,14 +6,14 @@ tag:
    - hexo
 ---
 
-- 灵感
+#### 灵感 ####
 
      　　　最近认证阿里云学生用户，参与ESC服务9.9元/月的活动，准备先搭建一个博客网站，写写自已的心得以及经验。之前也搭建过网站，最后由于个人没时间（没时间是假的，就是懒。哈哈）的原因导致最后服务器到期，域名到期被回收勒。累觉不爱楽、
      　　　
 　　　     新站准备通过Hexo来构建（Hexo是基于NodeJs），文章通过github托管。**通过脚本来实现自动更新，自动发布等功能**。也采用Linux命令别名来简化步骤。做一个有效率的攻城狮，不做重复的事情，不浪费时间。
 　　　     
      
-- linux 命令名
+#### linux 命令名 ####
 
 　　　Linux下 给命令起别名是通过 alias命令  
 　　　大致语法格式： alias  key= '  command  '  
@@ -22,8 +22,10 @@ tag:
 　　　
 　　　一般我都会把别名命令存放至    **~/.bashrc**  文件中。
 
-     如我在服务中添加的别名：
+　　　如我在服务中添加的别名：
+
 ```
+     
      alias vwc='vi /opt/blog/_config.yml'  #编辑站点文件
 	 alias vwtc='vi /opt/blog/themes/next/_config.yml'  #编辑主题文件
 	 alias cdblog='cd /opt/blog'    #切换到博客目录
@@ -32,7 +34,7 @@ tag:
 	 alias psh='ps -ef | grep hexo'   #查看hexo 进程
 ```
 
-- hexo cmd console
+#### hexo cmd console ####
 
 　　自已编写的hexo console  ，有点low。 多多包涵，哈哈。。。
    ![hexo console](/images/hexo_console.png)        
@@ -148,7 +150,7 @@ clear
 initUI
 ```
 
-- 定时部署github
+#### 定时部署github ####
 
 　　将shell中autoDeploy的方法,独立于一个脚本中，在通过Linux下的crontab定时器，配置时间规则定时执行脚本即可实现
 
