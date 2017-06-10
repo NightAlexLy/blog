@@ -207,7 +207,7 @@ tag:
 　　2.通过contab命令的方式   
 
 ```
-　　Usage:
+	Usage:
 	 crontab [options] file
 	 crontab [options]
 	 crontab -n [hostname]
