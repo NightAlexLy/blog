@@ -135,9 +135,9 @@ function autoDeploy()
 /usr/bin/expect <<-EOF
   spawn hexo deploy
   expect "Username"
-  send "$gitUn\r"
-  expect "Password"
-  send "$gitPwd\r"
+  send "$gitUn\r"      #github UserName
+  expect "Password"   
+  send "$gitPwd\r"     #github Password
   interact
   expect eof
 EOF
