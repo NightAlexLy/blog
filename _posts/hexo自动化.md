@@ -6,45 +6,45 @@ tag:
    - hexo
 ---
 
-- Áé¸Ð
+- çµæ„Ÿ
 
-     ¡¡¡¡¡¡×î½üÈÏÖ¤°¢ÀïÔÆÑ§ÉúÓÃ»§£¬²ÎÓëESC·þÎñ9.9Ôª/ÔÂµÄ»î¶¯£¬×¼±¸ÏÈ´î½¨Ò»¸ö²©¿ÍÍøÕ¾£¬Ð´Ð´×ÔÒÑµÄÐÄµÃÒÔ¼°¾­Ñé¡£Ö®Ç°Ò²´î½¨¹ýÍøÕ¾£¬×îºóÓÉÓÚ¸öÈËÃ»Ê±¼ä£¨Ã»Ê±¼äÊÇ¼ÙµÄ£¬¾ÍÊÇÀÁ¡£¹þ¹þ£©µÄÔ­Òòµ¼ÖÂ×îºó·þÎñÆ÷µ½ÆÚ£¬ÓòÃûµ½ÆÚ±»»ØÊÕÀÕ¡£ÀÛ¾õ²»°®˜S¡¢
-     ¡¡¡¡¡¡
-¡¡¡¡¡¡     ÐÂÕ¾×¼±¸Í¨¹ýHexoÀ´¹¹½¨£¨HexoÊÇ»ùÓÚNodeJs£©£¬ÎÄÕÂÍ¨¹ýgithubÍÐ¹Ü¡£**Í¨¹ý½Å±¾À´ÊµÏÖ×Ô¶¯¸üÐÂ£¬×Ô¶¯·¢²¼µÈ¹¦ÄÜ**¡£Ò²²ÉÓÃLinuxÃüÁî±ðÃûÀ´¼ò»¯²½Öè¡£×öÒ»¸öÓÐÐ§ÂÊµÄ¹¥³ÇÊ¨£¬²»×öÖØ¸´µÄÊÂÇé£¬²»ÀË·ÑÊ±¼ä¡£
-¡¡¡¡¡¡     
+     ã€€ã€€ã€€æœ€è¿‘è®¤è¯é˜¿é‡Œäº‘å­¦ç”Ÿç”¨æˆ·ï¼Œå‚ä¸ŽESCæœåŠ¡9.9å…ƒ/æœˆçš„æ´»åŠ¨ï¼Œå‡†å¤‡å…ˆæ­å»ºä¸€ä¸ªåšå®¢ç½‘ç«™ï¼Œå†™å†™è‡ªå·²çš„å¿ƒå¾—ä»¥åŠç»éªŒã€‚ä¹‹å‰ä¹Ÿæ­å»ºè¿‡ç½‘ç«™ï¼Œæœ€åŽç”±äºŽä¸ªäººæ²¡æ—¶é—´ï¼ˆæ²¡æ—¶é—´æ˜¯å‡çš„ï¼Œå°±æ˜¯æ‡’ã€‚å“ˆå“ˆï¼‰çš„åŽŸå› å¯¼è‡´æœ€åŽæœåŠ¡å™¨åˆ°æœŸï¼ŒåŸŸååˆ°æœŸè¢«å›žæ”¶å‹’ã€‚ç´¯è§‰ä¸çˆ±æ¥½ã€
+     ã€€ã€€ã€€
+ã€€ã€€ã€€     æ–°ç«™å‡†å¤‡é€šè¿‡Hexoæ¥æž„å»ºï¼ˆHexoæ˜¯åŸºäºŽNodeJsï¼‰ï¼Œæ–‡ç« é€šè¿‡githubæ‰˜ç®¡ã€‚**é€šè¿‡è„šæœ¬æ¥å®žçŽ°è‡ªåŠ¨æ›´æ–°ï¼Œè‡ªåŠ¨å‘å¸ƒç­‰åŠŸèƒ½**ã€‚ä¹Ÿé‡‡ç”¨Linuxå‘½ä»¤åˆ«åæ¥ç®€åŒ–æ­¥éª¤ã€‚åšä¸€ä¸ªæœ‰æ•ˆçŽ‡çš„æ”»åŸŽç‹®ï¼Œä¸åšé‡å¤çš„äº‹æƒ…ï¼Œä¸æµªè´¹æ—¶é—´ã€‚
+ã€€ã€€ã€€     
      
-- linux ÃüÁîÃû
+- linux å‘½ä»¤å
 
-¡¡¡¡¡¡LinuxÏÂ ¸øÃüÁîÆð±ðÃûÊÇÍ¨¹ý aliasÃüÁî  
-¡¡¡¡¡¡´óÖÂÓï·¨¸ñÊ½£º alias  key= '  command  '  
-¡¡¡¡¡¡
-¡¡¡¡¡¡Èç¹ûÖ±½ÓÔÚÃüÁî¼üÈëÃüÁî£¬Ö»ÄÜÔÚ±¾´Î»·¾³ÖÐÉúÐ§£¬µ±·þÎñÆ÷ÖØÆô»òÕß¹Ø»úµÈÇé¿ö£¬ÏÂ´ÎÔÙÆô¶¯·þÎñÆ÷µÄÊ±ºò£¬×ÔÒÑÅäÖÃµÄÒ»Ð©±ðÃû»á¶ªÊ§¡£Ò»°ã¶¼ÊÇ±£´æÖÁ¿ª»úÆô¶¯ÎÄ¼þÖÐ£¬±£Ö¤×ÔÒÑµÄ±ðÃû£¬Æô¶¯µÄÊ±ºò¶¼»áÉúÐ§¡£
-¡¡¡¡¡¡
-¡¡¡¡¡¡Ò»°ãÎÒ¶¼»á°Ñ±ðÃûÃüÁî´æ·ÅÖÁ    **~/.bashrc**  ÎÄ¼þÖÐ¡£
+ã€€ã€€ã€€Linuxä¸‹ ç»™å‘½ä»¤èµ·åˆ«åæ˜¯é€šè¿‡ aliaså‘½ä»¤  
+ã€€ã€€ã€€å¤§è‡´è¯­æ³•æ ¼å¼ï¼š alias  key= '  command  '  
+ã€€ã€€ã€€
+ã€€ã€€ã€€å¦‚æžœç›´æŽ¥åœ¨å‘½ä»¤é”®å…¥å‘½ä»¤ï¼Œåªèƒ½åœ¨æœ¬æ¬¡çŽ¯å¢ƒä¸­ç”Ÿæ•ˆï¼Œå½“æœåŠ¡å™¨é‡å¯æˆ–è€…å…³æœºç­‰æƒ…å†µï¼Œä¸‹æ¬¡å†å¯åŠ¨æœåŠ¡å™¨çš„æ—¶å€™ï¼Œè‡ªå·²é…ç½®çš„ä¸€äº›åˆ«åä¼šä¸¢å¤±ã€‚ä¸€èˆ¬éƒ½æ˜¯ä¿å­˜è‡³å¼€æœºå¯åŠ¨æ–‡ä»¶ä¸­ï¼Œä¿è¯è‡ªå·²çš„åˆ«åï¼Œå¯åŠ¨çš„æ—¶å€™éƒ½ä¼šç”Ÿæ•ˆã€‚
+ã€€ã€€ã€€
+ã€€ã€€ã€€ä¸€èˆ¬æˆ‘éƒ½ä¼šæŠŠåˆ«åå‘½ä»¤å­˜æ”¾è‡³    **~/.bashrc**  æ–‡ä»¶ä¸­ã€‚
 
-     ÈçÎÒÔÚ·þÎñÖÐÌí¼ÓµÄ±ðÃû£º
+     å¦‚æˆ‘åœ¨æœåŠ¡ä¸­æ·»åŠ çš„åˆ«åï¼š
 ```
-     alias vwc='vi /opt/blog/_config.yml'  #±à¼­Õ¾µãÎÄ¼þ
-	 alias vwtc='vi /opt/blog/themes/next/_config.yml'  #±à¼­Ö÷ÌâÎÄ¼þ
-	 alias cdblog='cd /opt/blog'    #ÇÐ»»µ½²©¿ÍÄ¿Â¼
-	 alias hs='nohup hexo server -p 80 >/dev/null 2>&1 &'  #Æô¶¯hexo
-	 alias hst="sh /opt/blog/killhexo.sh "   #Í£Ö¹hexo
-	 alias psh='ps -ef | grep hexo'   #²é¿´hexo ½ø³Ì
+     alias vwc='vi /opt/blog/_config.yml'  #ç¼–è¾‘ç«™ç‚¹æ–‡ä»¶
+	 alias vwtc='vi /opt/blog/themes/next/_config.yml'  #ç¼–è¾‘ä¸»é¢˜æ–‡ä»¶
+	 alias cdblog='cd /opt/blog'    #åˆ‡æ¢åˆ°åšå®¢ç›®å½•
+	 alias hs='nohup hexo server -p 80 >/dev/null 2>&1 &'  #å¯åŠ¨hexo
+	 alias hst="sh /opt/blog/killhexo.sh "   #åœæ­¢hexo
+	 alias psh='ps -ef | grep hexo'   #æŸ¥çœ‹hexo è¿›ç¨‹
 ```
 
 - hexo cmd console
 
-¡¡¡¡×ÔÒÑ±àÐ´µÄhexo console  £¬ÓÐµãlow¡£ ¶à¶à°üº­£¬¹þ¹þ¡£¡£¡£
+ã€€ã€€è‡ªå·²ç¼–å†™çš„hexo console  ï¼Œæœ‰ç‚¹lowã€‚ å¤šå¤šåŒ…æ¶µï¼Œå“ˆå“ˆã€‚ã€‚ã€‚
    ![hexo console](/images/hexo_console.png)        
-¡¡¡¡¡¡
-¡¡¡¡¡¡¡¡´óÖÂ¹¦ÄÜ£º
-¡¡¡¡¡¡¡¡¡¡¡¡¡¡£±.Æô¶¯hexo·þÎñ
-¡¡¡¡¡¡¡¡¡¡¡¡¡¡£².¹Ø±Õhexo·þÎñ
-¡¡¡¡¡¡¡¡¡¡¡¡¡¡ 3.»ñµÃhexo pid
-¡¡¡¡¡¡¡¡¡¡¡¡¡¡ 4. ×Ô¶¯¸üÐÂ
-¡¡¡¡¡¡¡¡¡¡¡¡¡¡ 5. ×Ô¶¯²¿Êðgithub
+ã€€ã€€ã€€
+ã€€ã€€ã€€ã€€å¤§è‡´åŠŸèƒ½ï¼š
+ã€€ã€€ã€€ã€€ã€€ã€€ã€€ï¼‘.å¯åŠ¨hexoæœåŠ¡
+ã€€ã€€ã€€ã€€ã€€ã€€ã€€ï¼’.å…³é—­hexoæœåŠ¡
+ã€€ã€€ã€€ã€€ã€€ã€€ã€€ 3.èŽ·å¾—hexo pid
+ã€€ã€€ã€€ã€€ã€€ã€€ã€€ 4. è‡ªåŠ¨æ›´æ–°
+ã€€ã€€ã€€ã€€ã€€ã€€ã€€ 5. è‡ªåŠ¨éƒ¨ç½²github
 
-¡¡¡¡¡¡¡¡shell£º
+ã€€ã€€ã€€ã€€shellï¼š
 ```
 #!/bin/bash
 
@@ -148,17 +148,17 @@ clear
 initUI
 ```
 
-- ¶¨Ê±²¿Êðgithub
+- å®šæ—¶éƒ¨ç½²github
 
-¡¡¡¡½«shellÖÐautoDeployµÄ·½·¨,¶ÀÁ¢ÓÚÒ»¸ö½Å±¾ÖÐ£¬ÔÚÍ¨¹ýLinuxÏÂµÄcrontab¶¨Ê±Æ÷£¬ÅäÖÃÊ±¼ä¹æÔò¶¨Ê±Ö´ÐÐ½Å±¾¼´¿ÉÊµÏÖ
+ã€€ã€€å°†shellä¸­autoDeployçš„æ–¹æ³•,ç‹¬ç«‹äºŽä¸€ä¸ªè„šæœ¬ä¸­ï¼Œåœ¨é€šè¿‡Linuxä¸‹çš„crontabå®šæ—¶å™¨ï¼Œé…ç½®æ—¶é—´è§„åˆ™å®šæ—¶æ‰§è¡Œè„šæœ¬å³å¯å®žçŽ°
 
-¡¡¡¡ÈçÎÒÅäÖÃµÄÃ¿Ìì23:30×Ô¶¯²¿Êð£º
+ã€€ã€€å¦‚æˆ‘é…ç½®çš„æ¯å¤©23:30è‡ªåŠ¨éƒ¨ç½²ï¼š
 
-¡¡¡¡30 23 * * * root `sh /opt/blog/hexo-deploy.sh >> /tmp/test.txt`
+ã€€ã€€30 23 * * * root `sh /opt/blog/hexo-deploy.sh >> /tmp/test.txt`
 
-- Óöµ½µÄ¿Ó
+- é‡åˆ°çš„å‘
     
-¡¡¡¡¡¡ Q £º crontabÄÚ»·¾³±äÁ¿ÓëShell»·¾³±äÁ¿²»Ò»ÖÂ£¿
-¡¡¡¡¡¡ A £º ±ÈÈç£¬ÎÒÔÚ½Å±¾ÖÐÊ¹ÓÃhexoÃüÁî£¬µ«ÊÇhexoÃüÁîÔÚ/usr/local/binÏÂÃæ¡£crontab»·¾³µÄPATHÃ»ÓÐÖ¸¶¨Õâ¸öÄ¿Â¼ÅäÖÃ£¬µ¼ÖÂÕâ¸öÃüÁî²îÕÒ²»µ½¡£×Ô¶¯»¯²Ù×÷Ò»ÖÂ²»³É¹¦£¬½â¾ö°ì·¨ÊÇÔÚ`/etc/profile`ÖÐµÄPATHºóÃæ×·¼Ó`:/usr/local/bin`¡£ÔÚ½Å±¾²¿ÊðµÄÍ·²¿Ìí¼Ó`. /etc/profile`¼´¿É¡£
-¡¡¡¡¡¡ Q£ºLinuxÃüÁî×Ô¶¯½»»¥£¿`expect command not found`
-¡¡¡¡¡¡ A :  yum install -y expect
+ã€€ã€€ã€€ Q ï¼š crontabå†…çŽ¯å¢ƒå˜é‡ä¸ŽShellçŽ¯å¢ƒå˜é‡ä¸ä¸€è‡´ï¼Ÿ
+ã€€ã€€ã€€ A ï¼š æ¯”å¦‚ï¼Œæˆ‘åœ¨è„šæœ¬ä¸­ä½¿ç”¨hexoå‘½ä»¤ï¼Œä½†æ˜¯hexoå‘½ä»¤åœ¨/usr/local/binä¸‹é¢ã€‚crontabçŽ¯å¢ƒçš„PATHæ²¡æœ‰æŒ‡å®šè¿™ä¸ªç›®å½•é…ç½®ï¼Œå¯¼è‡´è¿™ä¸ªå‘½ä»¤å·®æ‰¾ä¸åˆ°ã€‚è‡ªåŠ¨åŒ–æ“ä½œä¸€è‡´ä¸æˆåŠŸï¼Œè§£å†³åŠžæ³•æ˜¯åœ¨`/etc/profile`ä¸­çš„PATHåŽé¢è¿½åŠ `:/usr/local/bin`ã€‚åœ¨è„šæœ¬éƒ¨ç½²çš„å¤´éƒ¨æ·»åŠ `. /etc/profile`å³å¯ã€‚
+ã€€ã€€ã€€ Qï¼šLinuxå‘½ä»¤è‡ªåŠ¨äº¤äº’ï¼Ÿ`expect command not found`
+ã€€ã€€ã€€ A :  yum install -y expect
