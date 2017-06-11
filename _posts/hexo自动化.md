@@ -36,7 +36,7 @@ tag:
 #### hexo cmd console ####
 
 　　自已编写的hexo console  ，有点low。 多多包涵，哈哈。。。
-   ![hexo console](/images/hexo_console.png)        
+   ![hexo console](http://ore2d9chp.bkt.clouddn.com/hexo_console.png)        
 　　　
 　　　　大致功能：
 　　　　　　　１.启动hexo服务

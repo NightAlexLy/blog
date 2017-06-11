@@ -33,7 +33,7 @@ tag:
 　　7.表格   `Ctrl + Alt + T`
 　　9.帮助    `Ctrl + /`  [**马克飞象**]
 		
-![马克飞象快捷键](/images/markdown_kjj.png)    
+![马克飞象快捷键](http://ore2d9chp.bkt.clouddn.com/markdown_kjj.png)    
 
 #### 一些经验####
 - 开头空格
