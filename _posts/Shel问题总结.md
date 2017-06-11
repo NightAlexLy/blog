@@ -370,7 +370,7 @@ export: usage: export [-fn] [name[=value] ...] or export -p
 
 
 > 本文作者： Luis Yang    
->本文链接： [http://rtime.xin/2017/06/10/Shel问题总结/](http://rtime.xin/2017/06/10/Shel问题总结)    
+>本文链接： [http://rtime.xin/2017/06/11/Shel问题总结/](http://rtime.xin/2017/06/11/Shel问题总结/)    
 >版权声明： 本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 3.0 CN](http://creativecommons.org/licenses/by-nc-sa/3.0/cn/) 许可协议。转载请注明出处！   
 
 
