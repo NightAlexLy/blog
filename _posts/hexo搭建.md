@@ -62,11 +62,32 @@ tag:
 
 　　`Github`提供通过[Github Pages](https://github.com/blog/272-github-pages)搭建个人主页。 `Hexo`的`deploy`命令可以将生成文章的静态文件部署到远程Github服务器。也可以通过`GitHub`动态管理维护自已的文章。
 　　
-　　基于这些前提、决定先在自已的Linux服务器`[CentOS 7]`中构建Git环境。
+　　基于这些前提、决定先在自已的Linux服务器`[CentOS 7]`中构建Git环境。   
 　　
-　　安装Git的命令暂时空着、再找找。尴尬~~~~~
-　　
-　　安装`Git`的步骤大同小异，下载包、安装、配置、结合命令使用
+```
+    //先安装git依赖的包 
+    yum install zlib-devel 
+    yum install openssl-devel 
+    yum install perl 
+    yum install cpio 
+    yum install expat-devel 
+    yum install gettext-devel 
+    
+    //安装autoconf 
+    yum install autoconf 
+    
+    //安装git 
+    wget http://www.codemonkey.org.uk/projects/git-snapshots/git/git-latest.tar.xz 
+    xz -d git-latest.tar.xz
+    tar xzvf git-latest.tar.gz 
+    cd git-{date} 
+    autoconf 
+    ./configure --with-curl=/usr/local 
+    make 
+    make install
+```
+
+　　安装`Git`的步骤大同小异，下载包、安装、配置、配合命令使用既可
 　　
 　　[起步 - 安装 Git](https://git-scm.com/book/zh/v1/%E8%B5%B7%E6%AD%A5-%E5%AE%89%E8%A3%85-Git)
 　　[安装Git](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137396287703354d8c6c01c904c7d9ff056ae23da865a000)
