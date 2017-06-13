@@ -18,7 +18,7 @@ tag:
 
 #### 大致思路####
 
-- 1. 先在MarkDownPage中梳理一列整理内容
+- 1.先在MarkDownPage中梳理一列整理内容
 - 2.整理完成通过MarkDownPad导出页面
 - 3.修改导出的页面，将body的内容包裹在Div里面
 - 4.编辑导出页面的样式
