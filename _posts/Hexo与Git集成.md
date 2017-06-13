@@ -9,10 +9,12 @@ tag:
 
 #### git初始化项目 ####
 
-　　登录[Github](https://github.com/login)，初始化GitHub Pages项目。即是添加一个repository。         
-       　　　
-　　- Repository Name 填写 {github AccountName}.github.io    
-　　　　　　比如我的AccountName为NightAlexLy，即填写的为NightAlexLy.github.io
+　　登录[Github](https://github.com/login)，初始化GitHub Pages项目。即是添加一个Git Project。
+         
+　　点击`New repository`创建一个新的Project.需要填写选项如下：    
+      　　　
+　　- `Repository Name` 填写 `{github AccountName}.github.io`    
+　　　　　　比如我的`AccountName`为`NightAlexLy`，即填写的为`NightAlexLy.github.io`
 　　- 点击保存
 
 　　![create repository](http://ore2d9chp.bkt.clouddn.com/create_rep.png)  
@@ -36,7 +38,7 @@ tag:
 #### 配置Hexo ####    
 
 　　**站点文件和主题文件区别：   **
-　　- 站点文件作用于整个站点,配置一些站点信息（比如Site、URL、Directory等基础信息）   
+　　- 站点文件作用于整个站点,配置一些站点信息（比如`Site、URL、Directory`等基础信息）   
 　　- 主题文件即是应用主题所采用的配置、一般只做用于你采用的主题。   
 　　站点文件一般在blog的根目录,主题文件在Theme/主题名/下。文件名都为`_config.yml`
 
