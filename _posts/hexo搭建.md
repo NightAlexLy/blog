@@ -156,5 +156,5 @@ tag:
 　　一个简单的`Hexo博客`就搭建好了。【本文中的`Git环境`是为另外一篇文章构建基础~~~~】
 　　
 > 本文作者： Luis Yang
->本文链接： [http://rtime.xin/2017/06/11/Hexo 搭建/](http://rtime.xin/2017/06/11/Hexo 搭建/)
+>本文链接： [http://rtime.xin/2017/2017/06/13/hexo搭建/](http://rtime.xin/2017/2017/06/13/hexo搭建/)
 >版权声明： 本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 3.0 CN](http://creativecommons.org/licenses/by-nc-sa/3.0/cn/) 许可协议。转载请注明出处！
