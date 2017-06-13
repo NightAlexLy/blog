@@ -13,7 +13,7 @@ tag:
        　　　
 　　- Repository Name 填写 {github AccountName}.github.io    
 　　　　　　比如我的AccountName为NightAlexLy，即填写的为NightAlexLy.github.io
-  - 点击保存
+　　- 点击保存
 
 　　![create repository](http://ore2d9chp.bkt.clouddn.com/create_rep.png)  
 
