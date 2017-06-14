@@ -1,3 +1,12 @@
+
+---
+title: Hexo Daemon 
+tag:
+   - hexo
+   - nginx
+   - shell
+---
+
 #### 前提####
 
 　　今天中午的时候发现自已网站突然不能访问了，我猜肯定是后台的`hexo`服务异常自动kill掉了。果然登录服务器`ps -ef | grep hexo`查看进程，果然发现hexo的进程不在了。由于我将输出的日志指向了`/dev/null`（Linux下的垃圾回收箱）。排查不了错误信息，只能思考有什么方法保证网站一直正常访问。
@@ -12,35 +21,35 @@
 #### 守护脚本####
 
 ```
-#! /bin/sh
-#进程名字可修改
-PRO_NAME=hexo
- 
-while true ; do
- 
-#    用ps获取$PRO_NAME进程数量
-  NUM=`ps aux | grep ${PRO_NAME} | grep -v grep |wc -l`
-#  echo $NUM
-#    少于1，重启进程
-  if [ "${NUM}" -lt "1" ];then
-    echo "${PRO_NAME} was killed"
-    hexo server &
-#    大于1，杀掉所有进程，重启
-  elif [ "${NUM}" -gt "1" ];then
-    echo "more than 1 ${PRO_NAME},killall ${PRO_NAME}"
-    killall -9 $PRO_NAME
-    hexo server &
-  fi
-#    kill僵尸进程
-  NUM_STAT=`ps aux | grep ${PRO_NAME} | grep T | grep -v grep | wc -l`
- 
-  if [ "${NUM_STAT}" -gt "0" ];then
-    killall -9 ${PRO_NAME}
-    hexo server &
-  fi
-done
- 
-exit 0
+	#! /bin/sh
+	#进程名字可修改
+	PRO_NAME=hexo
+	 
+	while true ; do
+	 
+	#    用ps获取$PRO_NAME进程数量
+	  NUM=`ps aux | grep ${PRO_NAME} | grep -v grep |wc -l`
+	#  echo $NUM
+	#    少于1，重启进程
+	  if [ "${NUM}" -lt "1" ];then
+	    echo "${PRO_NAME} was killed"
+	    hexo server &
+	#    大于1，杀掉所有进程，重启
+	  elif [ "${NUM}" -gt "1" ];then
+	    echo "more than 1 ${PRO_NAME},killall ${PRO_NAME}"
+	    killall -9 $PRO_NAME
+	    hexo server &
+	  fi
+	#    kill僵尸进程
+	  NUM_STAT=`ps aux | grep ${PRO_NAME} | grep T | grep -v grep | wc -l`
+	 
+	  if [ "${NUM_STAT}" -gt "0" ];then
+	    killall -9 ${PRO_NAME}
+	    hexo server &
+	  fi
+	done
+	 
+	exit 0
 ```
 
 #### ｎpm ｆorever####
@@ -52,23 +61,23 @@ exit 0
 　　-  **安装步骤**：
 
 ```
-
-[sudo] npm install forever -g
-
-cd /path/to/your/project  #hexo根目录
-[sudo] npm install forever-monitor
-
-检查forever是否安装完成
-forever   #返回帮助文档
+	
+	[sudo] npm install forever -g
+	
+	cd /path/to/your/project  #hexo根目录
+	[sudo] npm install forever-monitor
+	
+	#检查forever是否安装完成
+	forever   #返回帮助文档
 ```
 
 　　-  **`forever`基础命令**：
 
 ```
-$ sudo npm install forever -g   #安装
-$ forever start app.js          #启动
-$ forever stop app.js           #关闭
-$ forever start -l forever.log -o out.log -e err.log app.js   #输出日志和错误
+	$ sudo npm install forever -g   #安装
+	$ forever start app.js          #启动
+	$ forever stop app.js           #关闭
+	$ forever start -l forever.log -o out.log -e err.log app.js   #输出日志和错误
 ```
 
 
@@ -95,9 +104,9 @@ $ forever start -l forever.log -o out.log -e err.log app.js   #输出日志和�
 　　- **启动`forever`**：
 
 ```
-forever --minUptime 10000 --spinSleepTime 26000 start app.js
-
-## minUptime、spinSleepTime可填可不填，不填默认也会有，参数的意思可以直接去forever上查询。
+	forever --minUptime 10000 --spinSleepTime 26000 start app.js
+	
+	## minUptime、spinSleepTime可填可不填，不填默认也会有，参数的意思可以直接去forever上查询。
 ```
 
 　　- **验证**：
@@ -114,7 +123,7 @@ forever --minUptime 10000 --spinSleepTime 26000 start app.js
 　　[Hexo静态化Host尝试](http://www.tuijiankan.com/2015/05/26/change_hexo_to_static/)
 　　
 　　通过`hexo g`会生成整个站点静态文件，存在至`blog`的`public`目录。
-　　采用Nginx指向本地静态文件目录的方式暴露服务。因为Ngxin默认采用守护模式启动的，只要主进程不被kill掉，应用基本能够自动恢复，并且访问静态页面效率上会比部署在一般容器中更快。
+　　采用Nginx指向本地静态资源目录的方式暴露服务。因为Ngxin默认采用守护模式启动的，只要主进程不被kill掉，应用基本能够自动恢复，并且访问静态页面效率上会比部署在一般容器中更快。
 
 　　**Nginx部署**
 		
@@ -192,3 +201,7 @@ forever --minUptime 10000 --spinSleepTime 26000 start app.js
 - 二级域名映射-Nginx
 - 阿里云添加80监控
 
+
+> 本文作者： Luis Yang    
+>本文链接： [http://rtime.xin/2017/06/14/Hexo Daemon/](http://rtime.xin/2017/06/14/Hexo Daemon/)    
+>版权声明： 本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 3.0 CN](http://creativecommons.org/licenses/by-nc-sa/3.0/cn/) 许可协议。转载请注明出处！   
