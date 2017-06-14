@@ -4,7 +4,7 @@ title: Site diary
 tag:
    - site
    - diary
-categories
+categories:
    - 记录
 ---
 
