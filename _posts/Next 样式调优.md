@@ -14,13 +14,16 @@ comments: false
 　　编辑`themes/next/source/css/_custom`下的`custom.styl`，添加如下代码即可。
 
 ```
-.links-of-blogroll-title{
-   margin-left:6px;
-}
+	.links-of-blogroll-title{
+	   margin-left:6px;
+	}
+	
+	.links-of-blogroll-inline .links-of-blogroll-item{
+	    float: left;
+	    margin-left: 6px;
+	    width: 47%;
+	}
 
-.links-of-blogroll-inline .links-of-blogroll-item{
-  margin-left:6px;
-}
 ```
 
 #### Code标签 ####
@@ -28,8 +31,8 @@ comments: false
 　　编辑`themes/next/source/css/_custom`下的`custom.styl`，添加如下代码即可。
 
 ```
-//修改文章内code样式
-code {color:#c7254e;background:#f8f3f4;}
+	//修改文章内code样式
+	code {color:#c7254e;background:#f8f3f4;}
 ```
 
 > 本文作者： Luis Yang    
