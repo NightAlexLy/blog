@@ -64,3 +64,6 @@ tag:
 
 　　![github pages](http://ore2d9chp.bkt.clouddn.com/hexo_gitpages.png)
    
+> 本文作者： Luis Yang    
+>本文链接： [http://rtime.xin/2017/06/13/Hexo与Git集成/](http://rtime.xin/2017/06/13/Hexo与Git集成/)    
+>版权声明： 本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 3.0 CN](http://creativecommons.org/licenses/by-nc-sa/3.0/cn/) 许可协议。转载请注明出处！  
