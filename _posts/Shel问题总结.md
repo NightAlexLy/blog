@@ -1,8 +1,10 @@
 ---
 title: shell 问题总结
+date: 2017-06-11 19:33:12
 tag:
    - linux
    - shell
+comments: false
 ---
 
 #### 反思#### 

@@ -1,9 +1,11 @@
 
 ---
 title: Hexo 与 Git 集成
+date: 2017-06-12 22:33:12
 tag:
    - hexo
    - git
+comments: false
 ---
 
 

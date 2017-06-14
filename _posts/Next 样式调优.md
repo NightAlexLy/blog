@@ -1,10 +1,12 @@
 
 ---
 title: Next 样式调优 
+date: 2017-06-14 23:15:12
 tag:
    - hexo
 categories:
    - hexo
+comments: false
 ---
 
 #### Links对齐 ####
@@ -19,6 +21,15 @@ categories:
 .links-of-blogroll-inline .links-of-blogroll-item{
   margin-left:6px;
 }
+```
+
+#### Code标签 ####
+
+　　编辑`themes/next/source/css/_custom`下的`custom.styl`，添加如下代码即可。
+
+```
+//修改文章内code样式
+code {color:#c7254e;background:#f8f3f4;}
 ```
 
 > 本文作者： Luis Yang    

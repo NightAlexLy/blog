@@ -1,10 +1,12 @@
 
 ---
 title: Hexo Daemon 
+date: 2017-06-14 14:15:12
 tag:
    - hexo
    - nginx
    - shell
+comments: false
 ---
 
 #### 前提####

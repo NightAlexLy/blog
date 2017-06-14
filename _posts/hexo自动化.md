@@ -1,9 +1,11 @@
 ---
 title: hexo auto shell
+date: 2017-06-11 21:33:12
 tag:
    - linux
    - shell
    - hexo
+comments: false
 ---
 
 #### 灵感 ####    
