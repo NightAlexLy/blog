@@ -4,7 +4,7 @@ date: 2017-06-14 23:58:42
 comments: false
 ---
 
-<div style="">
+<div class="lables-of-div">
 **IT Infos**    
 - [CSDN](http://www.csdn.net/)   
 - [ITeye](http://www.iteye.com/)   
