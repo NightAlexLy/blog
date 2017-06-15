@@ -28,3 +28,8 @@ comments: false
 - [JSON压缩](http://tool.chinaz.com/js.aspx)   
 - [正则验证](http://tool.oschina.net/regex/)
 </div>  
+
+<div style="float:left;margin: 0px;padding: 0px 40px 0px 0px;">
+**Skills**   
+- [学习新的编程语言的12个方法](https://my.oschina.net/editorial-story/blog/882272) 　　　 
+</div>  
