@@ -24,7 +24,8 @@ comments: false
 
 <div class="lables-of-div">
 **APIs**    
-- [Git Book](https://git-scm.com/book/zh/v2)   
+- [Git Book](https://git-scm.com/book/zh/v2)       
+- [Git 常用命令](http://justcoding.iteye.com/blog/1830388)
 </div>
 
 <div class="lables-of-div">
