@@ -33,6 +33,3 @@ comments: false
 	System.out.println(sb2.toString());
 ```
 　　
-> 本文作者： Luis Yang
->本文链接： [http://rtime.xin/2017/06/15/Java 编码规范/](http://rtime.xin/2017/06/15/Java 编码规范/)
->版权声明： 本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 3.0 CN](http://creativecommons.org/licenses/by-nc-sa/3.0/cn/) 许可协议。转载请注明出处！

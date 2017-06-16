@@ -169,7 +169,3 @@ initUI
 
 　　　 Q：执行脚本，直接返回killed,脚本直接结束？
 　　　 A：有可能`kill -9`的时候，杀死了不存在的进程或者异常进程导致。
-
-> 本文作者： Luis Yang    
->本文链接： [http://rtime.xin/2017/06/11/hexo自动化/](http://rtime.xin/2017/06/11/hexo自动化/)    
->版权声明： 本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 3.0 CN](http://creativecommons.org/licenses/by-nc-sa/3.0/cn/) 许可协议。转载请注明出处！   

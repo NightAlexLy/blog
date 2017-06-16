@@ -203,7 +203,3 @@ comments: false
 - 二级域名映射-Nginx
 - 阿里云添加80监控
 
-
-> 本文作者： Luis Yang    
->本文链接： [http://rtime.xin/2017/06/14/Hexo Daemon/](http://rtime.xin/2017/06/14/Hexo Daemon/)    
->版权声明： 本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 3.0 CN](http://creativecommons.org/licenses/by-nc-sa/3.0/cn/) 许可协议。转载请注明出处！   
