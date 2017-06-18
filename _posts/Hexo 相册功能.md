@@ -272,11 +272,18 @@ comments: false
 	  return result;
 	};
 ```
+　　`hexo`执行调用`Hexo-generator-photo`插件：
+　　网站根目录的`package.json`文件中天价如下一行：
+```
+	"hexo-server": "^0.2.0",  //下面添加,不要遗漏","
+	"hexo-generator-photo":"^0.0.1"
+```
+
 ##### 相册样式调整#####
 
 　　新增相册的swig文件（`themes\next\layout\photo.swig`）：
 ```
-{% extends '_layout.swig' %}
+	{% extends '_layout.swig' %}
 	{% import '_macro/post-collapse-photo.swig' as post_template %}
 	{% import '_macro/sidebar.swig' as sidebar_template %}
 	{% block title %}{{ __('title.photo') }} | {{ config.title }}{% endblock %}
@@ -431,11 +438,10 @@ menu： //节点下添加如下一行
 
 #### 心得 总结####
 
-　　关于插件修改的一点心得：
 　　　　
-　　　　安装Hexo之后，插件默认存放在`blog\node_modules`目录下。
-　　　　插件开发的核心文件:`index.js`,`package`.`json,generator.js`
-　　　　关于插件开发的Demo：[Plugin Demo](https://hexo.io/docs/plugins.html)
+　　安装Hexo之后，插件默认存放在`blog\node_modules`目录下。
+　　插件开发的核心文件:`index.js`,`package`.`json,generator.js`
+　　关于插件开发的Demo：[Plugin Demo](https://hexo.io/docs/plugins.html)
 
 
 #### 后续优化####
