@@ -29,7 +29,8 @@ comments: false
 　　本次实践修改的插件有：
 　　　　1.[hexo-generator-archive](https://github.com/hexojs/hexo-generator-archive)
 　　　　2.[hexo-generator-index](https://github.com/hexojs/hexo-generator-index)
-　　　　3.hexo-generator-photo[自已新增的]
+　　　　2.[hexo-generator-category](https://github.com/hexojs/hexo-generator-category)
+　　　　4.hexo-generator-photo[自已新增的]
 
 　　每一个小相册都是一个MD文件,每次首页和归档生成的时候都会把相册加载进去。我想让相册和博客进行区别，所以在MD文件的开头会声明一个属性`isPhoto`,`true表示相册、false表示普通博客文章`。
 　　`hexo-generator-archive`和`hexo-generator-index`中去除相册的展示。
@@ -446,4 +447,8 @@ menu： //节点下添加如下一行
 
 #### 后续优化####
 　　
-　　
+　　- 首页、标签、文章详情页日志总数减去相册的条数（site.pages.length）
+　　- 图片展示优化
+　　- 图片整理（QQ空间链接不行）
+　　- 视屏的优化
+　　- 相册页的日志总条数问题
