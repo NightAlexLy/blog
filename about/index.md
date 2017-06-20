@@ -6,3 +6,25 @@ comments: false
 isTitle: true
 ---
 
+{% centerquote %}
+
+　　　　子非鱼安知鱼之乐．      
+            -《庄子.秋水》
+
+{% endcenterquote %}
+
+### 联系方式 ###
+- Email：night_ly@live.com
+- QQ：253758175
+
+
+### 个人简介 ###
+
+　　目前在国内前几的支付公司担任Java软件工程师的职责，主要负责支付订单模块的研发。
+
+### 座右铭 ###
+- **stay hungry,stay foolish.**
+- **good good study,day day up.**
+
+
+{% fullimage /images/me.jpg, "in ShangHai", "in ShangHai" %}

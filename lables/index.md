@@ -1,7 +1,8 @@
 ---
-title: 
+title: Lables
 date: 2017-06-14 23:58:42
 comments: false
+isTitle: true
 ---
 
 <div class="lables-of-div">
