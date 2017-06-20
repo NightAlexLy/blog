@@ -6,7 +6,6 @@ tag:
    - shell
 categories:
    - linux
-   - shell
 comments: false
 ---
 
