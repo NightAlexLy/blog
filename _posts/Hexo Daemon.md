@@ -5,9 +5,9 @@ date: 2017-06-14 14:15:12
 tag:
    - hexo
    - nginx
-   - shell
-categories:
-   - hexo
+   - shell  
+categories:  
+   - hexo  
 comments: false
 ---
 

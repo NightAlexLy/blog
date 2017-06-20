@@ -3,8 +3,8 @@
 title: Git 问题小结
 date: 2017-06-15 11:20:12
 tag:
-   - git
-categories:
+   - git  
+categories:  
    - git
 comments: false
 ---
