@@ -8,8 +8,8 @@ isTitle: true
 
 {% centerquote %}
 
-　　　　子非鱼安知鱼之乐．      
-            -《庄子.秋水》
+　　　　**子非鱼安知鱼之乐．**      
+     　　　　　　　　　　　　　　　　　　-《庄子.秋水》
 
 {% endcenterquote %}
 
@@ -26,5 +26,9 @@ isTitle: true
 - **stay hungry,stay foolish.**
 - **good good study,day day up.**
 
+　　　
+　　
+　　　
+　　
 
 {% fullimage /images/me.jpg, "in ShangHai", "in ShangHai" %}
