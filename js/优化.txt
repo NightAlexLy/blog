@@ -1,0 +1,3 @@
+./layout/_third-party/search/localsearch.swig:    var isfetched = false;
+
+./layout/_third-party/analytics/lean-analytics.swig 

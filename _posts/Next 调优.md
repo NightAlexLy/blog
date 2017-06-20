@@ -65,6 +65,7 @@ comments: false
 　　参考文章：
 　　　　[使用gulp精简hexo博客代码](http://www.5941740.cn/2016/02/19/gulp-minify-blog/)
 　　　　[gulp构建入门](http://www.gulpjs.com.cn/docs/getting-started/)
+　　　　[gulp-load-plugins－模块化管理插件](http://blog.csdn.net/baidu_31333625/article/details/61916398)
 
 　　gulp是nodejs下的自动构建工具，通过一列的task执行步骤进行自动流程化处理。
 　　
@@ -169,8 +170,16 @@ gulp task finished!
 ```
 　　Q： **gulp command not found ????**
 　　A： `npm install -g gulp`
+
+#### 菜单项未选中####
 　　
+　　点击左边菜单栏的选项，发现页面刷新之后，选中项样式没有被添加。
+　　搜寻JS发现（`themes/next/source/js/src/utils.js`）如下这段代码：
+　　`path = path === '/' ? path : path.substring(0, path.length - 1);` 
+　　假如`Path`为`/archives/`，通过上述代码最终`Path`会被改成`/archives`。下面获取元素的时候就会找不到对象，解决办法是将后面 `-1`去除。
 　　
+
+
 
 　　
 
