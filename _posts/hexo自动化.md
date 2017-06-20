@@ -5,6 +5,8 @@ tag:
    - linux
    - shell
    - hexo
+categories:
+   - hexo
 comments: false
 ---
 

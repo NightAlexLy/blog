@@ -5,6 +5,8 @@ title: Hexo 相册实践
 date: 2017-06-18 21:33:12
 tag:
    - hexo
+categories:
+   - hexo
 comments: false
 ---
 

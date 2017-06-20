@@ -4,6 +4,8 @@ title: Hexo 搭建
 date: 2017-06-13 23:33:12
 tag:
    - hexo
+categories:
+   - hexo
 comments: false
 ---
 

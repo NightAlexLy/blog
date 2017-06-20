@@ -4,6 +4,8 @@ title: Java 编码规范
 date: 2017-06-15 19:54:12
 tag:
    - java
+categories:
+   - java
 comments: false
 ---
 

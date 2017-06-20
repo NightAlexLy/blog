@@ -35,7 +35,6 @@ isTitle: true
 - [正则验证](http://tool.oschina.net/regex/)   
 - [Google 翻译](https://translate.google.cn/)   
 - [JSON解析](http://www.sojson.com/simple_json.html)
-- 
 </div>  
 
 <div class="lables-of-div">

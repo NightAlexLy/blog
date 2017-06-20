@@ -5,6 +5,8 @@ date: 2017-06-12 22:33:12
 tag:
    - hexo
    - git
+categories:
+   - hexo
 comments: false
 ---
 

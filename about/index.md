@@ -9,7 +9,7 @@ isTitle: true
 {% centerquote %}
 
 　　　　**子非鱼安知鱼之乐．**      
-     　　　　　　　　　　　　　　　　　　-《庄子.秋水》
+     　　　　　　　　　　　　　　　　　　　　　　-《庄子.秋水》
 
 {% endcenterquote %}
 
@@ -20,7 +20,7 @@ isTitle: true
 
 ### 个人简介 ###
 
-　　目前在国内前几的支付公司担任Java软件工程师的职责，主要负责支付订单模块的研发。
+　　　目前在国内前几的支付公司担任Java软件工程师，主要负责支付订单模块的研发。
 
 ### 座右铭 ###
 - **stay hungry,stay foolish.**

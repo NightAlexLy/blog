@@ -6,6 +6,8 @@ tag:
    - hexo
    - nginx
    - shell
+categories:
+   - hexo
 comments: false
 ---
 
