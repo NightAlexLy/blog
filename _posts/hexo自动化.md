@@ -7,6 +7,7 @@ tag:
    - hexo
 categories:
    - hexo  
+   - shell
 comments: false
 ---
 

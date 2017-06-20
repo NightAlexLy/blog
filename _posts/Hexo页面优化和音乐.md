@@ -1,5 +1,5 @@
 ---
-title: Hexo页面优化以及音乐的心得
+title: Hexo页面优化和音乐
 date: 2017-06-20 21:31:32
 tag:
    - hexo   
