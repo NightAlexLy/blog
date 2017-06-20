@@ -58,3 +58,119 @@ comments: false
 	{% endif %}
 ```
    
+#### 静态页面压缩####
+
+　　通过`Hexo g`自动生成的静态js、css、html是没有经过压缩的,而且存在大量无用的空白。想通过优化的方式，自动将生成的页面进行亚索
+
+　　参考文章：
+　　　　[使用gulp精简hexo博客代码](http://www.5941740.cn/2016/02/19/gulp-minify-blog/)
+　　　　[gulp构建入门](http://www.gulpjs.com.cn/docs/getting-started/)
+
+　　gulp是nodejs下的自动构建工具，通过一列的task执行步骤进行自动流程化处理。
+　　
+　　安装gulp以及所需插件：
+　　`npm install -d --save gulp gulp-clean gulp-load-plugins gulp-minify-css gulp-minify-html gulp-rename gulp-uglify gulp-shell  typescript`
+　　
+　　在站点的根目录创建gulpfile.js文件（默认的处理文件），我的站点目录是/opt/blog/。
+　gulpfile.js内容如下：
+```
+	var gulp = require('gulp');
+	var clean = require('gulp-clean');
+	var minifyCss = require('gulp-minify-css');
+	var minifyHtml = require('gulp-minify-html');
+	var uglify = require('gulp-uglify');
+	var shell = require('gulp-shell');
+	var ts = require('gulp-typescript');
+	
+	gulp.task("clean",function() {
+	    return gulp.src("./dst/*")
+	    .pipe(clean());           //plugins为加载的gulp-load-plugins插件,它可以自动加载项目依赖(package.json定义)
+	});
+	
+	gulp.task("css",function() {
+	    return gulp.src(["public/**/*.css","!public/**/*.min.css"])
+	    .pipe(minifyCss({compatibility: "ie8"}))
+	    .pipe(gulp.dest("./dst/"));
+	});
+	
+	gulp.task("js",function() {
+	    return gulp.src(["public/**/*.js","!public/**/*.min.js"])
+	   .pipe(ts({
+	      target: "es5",
+	      allowJs: true,
+	      module: "commonjs",
+	      moduleResolution: "node"
+	    }))
+	    .pipe(uglify())
+	    .pipe(gulp.dest("./dst/"));
+	});
+	
+	gulp.task("html",function() {
+	    return gulp.src("public/**/*.html")
+	    .pipe(minifyHtml())
+	    .pipe(gulp.dest("./dst/"));
+	});
+	
+	gulp.task("default",["css","js","html","mv"],function() {
+	    console.log("gulp task finished!");
+	});
+	
+	gulp.task("watch",function() {
+	    gulp.watch("public/*",["default"]);
+	});
+	
+	gulp.task("mv",function() {
+	    return gulp.src("./dst/*")
+	    .pipe(shell([
+	        "cp -r ./dst/* ./public/"
+	    ]));
+	});
+```
+
+通过执行`gulp`命令即可开启压缩处理。
+
+执行结果：
+```
+[~~~~@~~~~~ blog]# gulp 
+[15:35:41] Using gulpfile /opt/blog/gulpfile.js
+[15:35:41] Starting 'css'...
+[15:35:41] Starting 'js'...
+[15:35:41] Starting 'html'...
+[15:35:42] Finished 'css' after 1.31 s
+public/lib/Han/dist/han.js(2301,7): error TS7028: Unused label.
+public/lib/velocity/velocity.js(348,22): error TS2300: Duplicate identifier 'offsetParent'.
+public/lib/velocity/velocity.js(360,17): error TS2300: Duplicate identifier 'offsetParent'.
+[15:36:01] TypeScript: 3 semantic errors
+[15:36:01] TypeScript: emit succeeded (with errors)
+[15:36:01] Finished 'js' after 20 s
+[15:36:02] Finished 'html' after 20 s
+[15:36:02] Starting 'default'...
+gulp task finished!
+[15:36:02] Finished 'default' after 90 μs
+```
+
+**遇到的坑**
+
+　　Q：**GulpUglifyError: unable to minify JavaScript???**
+　　A：在进行压缩的时候执行typescript检查javascript的类型(es6,es8)。
+
+```
+	//改写后的处理
+	var ts = require('gulp-typescript');
+	var uglify = require('gulp-uglifyjs');
+	....
+	.pipe(ts({
+	    target: "es5",
+	    allowJs: true,
+	    module: "commonjs",
+	    moduleResolution: "node"
+	}))
+	.pipe(uglify())
+```
+　　Q： **gulp command not found ????**
+　　A： `npm install -g gulp`
+　　
+　　
+
+　　
+
