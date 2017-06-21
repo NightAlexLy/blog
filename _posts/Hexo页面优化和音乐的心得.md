@@ -32,7 +32,7 @@ comments: false
 	./layout/_partials/head.swig:<script type="text/javascript" id="hexo.configurations">var NexT=window.NexT||{};var CONFIG={root:'{{ theme.root }}',scheme:'{{ theme.scheme }}',sidebar:{{theme.sidebar|json_encode}},fancybox:{{theme.fancybox}},motion:{{theme.use_motion}},duoshuo:{userId:'{{ theme.duoshuo_info.user_id | default() }}',author:'{{ theme.duoshuo_info.admin_nickname | default(__('author'))}}'},algolia:{applicationID:'{{ theme.algolia.applicationID }}',apiKey:'{{ theme.algolia.apiKey }}',indexName:'{{ theme.algolia.indexName }}',hits:{{theme.algolia_search.hits|json_encode}},labels:{{theme.algolia_search.labels|json_encode}}}};</script>
 ```
 	 
-　　可以发现该段代码存在`./layout/_partials/head.swig`中。特别注意：`{{  xxx  }}`标识模板会引用页面变量中的某个属性，**这段代码是不能单独抽取成一个JS文件。**
+　　可以发现该段代码存在`./layout/_partials/head.swig`中。特别注意：`{ \{  xxx  }\  }`标识模板会引用页面变量中的某个属性，**这段代码是不能单独抽取成一个JS文件。**
 
 ##### JS压缩#####
 　　
