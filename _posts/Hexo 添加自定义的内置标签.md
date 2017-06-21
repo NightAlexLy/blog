@@ -13,7 +13,7 @@ comments: false
 　　
 　　想设计一个记录自已骑行的页面，显示时间、地点、路线图等信息。方便以后做一些留念。定位想实现下面类似的效果。参考：《[特效](http://www.iissnan.com/)》
 　　
-　　![特效](/images/hexo_photo.png)
+　　![特效](/images/hexo_lsb.png)
 　　
 　　实现方案也比较简单，反键查看源码。直接Copy，在加之改造即可。下面所述的方式是怎么提高代码的复用性。（内置标签）
 
@@ -113,5 +113,5 @@ comments: false
 ```
 　　 {% locationAddr '', 'Test Address' %}
 　   或者
-　    {% locationAddr '2017-01-22', 'Test Address' %}　 
+　　 {% locationAddr '2017-01-22', 'Test Address' %}　 
 ```
