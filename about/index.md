@@ -8,7 +8,7 @@ isTitle: true
 
 {% centerquote %}
 
-　　　　**子非鱼安知鱼之乐．**      
+　　　　**子非鱼,安知鱼之乐．**      
      　　　　　　　　　　　　　　　　　　　　　　-《庄子.秋水》
 
 {% endcenterquote %}

@@ -27,6 +27,20 @@ isTitle: true
 **APIs**    
 - [Git Book](https://git-scm.com/book/zh/v2)       
 - [Git 常用命令](http://justcoding.iteye.com/blog/1830388)
+- [w3school](http://www.w3school.com.cn/)
+- [Jquery](http://api.jquery.com/)
+- [Linux Performance](http://www.brendangregg.com/linuxperf.html)
+- [NexT Api](http://theme-next.iissnan.com/)
+- [Gulp Api](http://www.gulpjs.com.cn/docs/getting-started/)
+- [NPM Api](https://www.npmjs.com/)
+- [FontAwesome](http://www.yeahzan.com/fa/facss.html)
+</div>
+
+
+<div class="lables-of-div">
+**Git**    
+- [Git Book](https://git-scm.com/book/zh/v2)       
+- [Git 常用命令](http://justcoding.iteye.com/blog/1830388)
 </div>
 
 <div class="lables-of-div">
