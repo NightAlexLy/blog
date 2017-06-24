@@ -16,6 +16,8 @@ comments: false
  **劝学 **{% endcq %}
 
 
+
+- **2017-06-22 　　 新增内置标签LocationAddr/lsb**
 - **2017-06-21 　　 High一下优化、集成HTML压缩导致排版存在问题，继续优化排版**
 - **2017-06-20 　　 页面HTML、CSS、JavaScript优化，集成gulp自动构建脚本**
 - **2017-06-19 　　 添加留言、关于**
