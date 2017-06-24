@@ -31,4 +31,4 @@ isTitle: true
 　　　
 　　
 
-{% fullimage /images/me.jpg, "in ShangHai", "in ShangHai" %}
+{% fullimage http://ore2d9chp.bkt.clouddn.com/me.jpg, "in ShangHai", "in ShangHai" %}
