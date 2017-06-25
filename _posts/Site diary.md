@@ -16,7 +16,8 @@ comments: false
  **劝学 **{% endcq %}
 
 
-
+- **2017-06-25 　　 新增评论功能，集成网易云跟帖**
+- **2017-06-25 　　 修复相册的BUG，以及添加相册功能，参考：[MA5-Gallery](http://down.admin5.com/demo/code_pop/19/1191/)**
 - **2017-06-22 　　 新增内置标签LocationAddr/lsb**
 - **2017-06-21 　　 High一下优化、集成HTML压缩导致排版存在问题，继续优化排版**
 - **2017-06-20 　　 页面HTML、CSS、JavaScript优化，集成gulp自动构建脚本**
