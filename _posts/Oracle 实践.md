@@ -10,12 +10,12 @@ comments: false
 ---
 
 
-#### 1. 查看当前的库： ####
+#### 查看当前的库 ####
 ```
 	select  name  from  v$ database  ;
 ```
 
-#### 2.查看当前表是否存在： ####
+#### 查看当前表是否存在 ####
 
 ```
 	select count(*) from user_tables where table_name = 'TABLE_NAME';      0表示不存在，1表示存在。
@@ -23,13 +23,13 @@ comments: false
 	select count(*) from dba_tables where owner = 'USER_NAME' and table_name = 'TABLE_NAME';   
 ```
 
-#### 3.建立索引 ####
+#### 建立索引 ####
 
 ```
  	CREATE INDEX IDX_OUT_REFUND_NO ON ACCTPAY.T_ACC_REFUND_APPLY(OUT_REFUND_NO); 
 ```
 
-#### 4.查看表的索引 ####
+#### 查看表的索引 ####
 
 ```
 	select * from user_indexes;
@@ -37,13 +37,13 @@ comments: false
 ```
 
 
-#### 5.删除索引 ####
+#### 删除索引 ####
 
 ```
 	DROP INDEX ACCTPAY.IDX_OUT_REFUND_NO;
 ```
 
-#### 6.表新增列    ####
+#### 表新增列   ####
 
 ```
 	alter table Schema.Table add Column VARCHAR2(32) ;
@@ -51,7 +51,7 @@ comments: false
      is '字段备注'; 
 ```
 
-#### 7.表删除列 ####    
+#### 表删除列 ####    
 
 ```
 	alter table Schema.Table drop column ColumnName;
