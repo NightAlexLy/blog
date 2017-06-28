@@ -11,7 +11,7 @@ comments: false
 
 #### 基础介绍 ####
 
-　　在[上一篇](http://www.rtime.xin/2017/06/27/Java%20Hessian%E5%88%9D%E4%BD%93%E9%AA%8C/)中我们通过HessianServlet的方式暴露一个简单的Hessian服务，这种方式会造成服务层和控制层之间耦合。一般情况下我们都不会采取这种方式【本次只是为了演示基础Hessian的基础实现。】。Spring框架也集成了对一些基础RPC框架的支持，比如jaxws-WebService、Hessian、Http invoker等。    
+　　在[上一篇](http://www.rtime.xin/2017/06/27/Java%20Hessian%E5%88%9D%E4%BD%93%E9%AA%8C/)中我们通过HessianServlet的方式暴露一个简单的Hessian服务，这种方式会造成服务层和控制层之间耦合。一般情况下我们都不会采取这种方式【本次只是为了演示基础的Hessian服务实现】。Spring框架也集成了对一些基础RPC框架的支持，比如jaxws-WebService、Hessian、Http invoker等。    
 　　
 	本篇文章就简单介绍下，Spring与Hessian集成的方法。
 
@@ -22,7 +22,7 @@ comments: false
 　　**pom.xml**
 
 ```
-　　		<dependency>
+		<dependency>
 			<groupId>com.caucho</groupId>
 			<artifactId>hessian</artifactId>
 			<version>4.0.38</version>
@@ -66,7 +66,7 @@ comments: false
 ```
 　　public interface HelloWordService {
 
-	public String sayMsg(String message);
+　　　　public String sayMsg(String message);
 	
 　　}
 ```
@@ -216,13 +216,13 @@ comments: false
 
 　　输出：“**HTTP Status 405 - HessianServiceExporter only supports POST requests**”，即表示Hessian服务发布成功
 　　
-　　两种验证方式：
+　　**两种验证方式：**
 　　　　1.通过HTTP的方式，自已调用自已的Hessian服务
 　　　　2.通过Main方法直接验证
 
-　　第一种方法：
+　　**第一种方式**
 　　　　浏览器输入：`http://localhost:8080/hessian-server-springmvc/sayMsg?msg=xxx`
 　　　　输出”Hello xxx“表示服务自已调用自已正常、
 
-　　第二种方法：
+　　**第二种方式：**
 　　　　直接运行Main方法即可。
