@@ -60,6 +60,19 @@ comments: false
 	}
 ```
 
+##### web.xml#####
+
+```
+	<servlet>
+		<servlet-name>helloword</servlet-name>
+		<servlet-class>org.luis.framework.hessian.service.impl.HelloWordServiceImpl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>helloword</servlet-name>
+		<url-pattern>/hello</url-pattern>
+	</servlet-mapping>
+```
+
 ##### 容器启动#####
 	
 　　将应用通过war的方式发布至Tomcat容器，容器正常启动。
