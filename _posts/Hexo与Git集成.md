@@ -21,7 +21,7 @@ comments: false
 　　　　　　比如我的`AccountName`为`NightAlexLy`，即填写的为`NightAlexLy.github.io`
 　　- 点击保存
 
-　　![create repository](http://ore2d9chp.bkt.clouddn.com/create_rep.png)  
+　　![create repository](https://infos.rtime.xin/create_rep.png)  
 
 
 
@@ -58,7 +58,7 @@ comments: false
 
 　　 切换到站点目录`${BLOG}`,执行`hexo deploy`命令.
 　　  
-　　![hexo deploy](http://ore2d9chp.bkt.clouddn.com/hexo_deploy.png)
+　　![hexo deploy](https://infos.rtime.xin/hexo_deploy.png)
 
 　　 结尾出现`INFO Deploy done:git`表示push成功.(部署成功)
 
@@ -66,5 +66,5 @@ comments: false
 
 　　 浏览器输入"创建项目的repository name"。比如我的为nightalexly.github.io。
 
-　　![github pages](http://ore2d9chp.bkt.clouddn.com/hexo_gitpages.png)
+　　![github pages](https://infos.rtime.xin/hexo_gitpages.png)
    

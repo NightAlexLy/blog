@@ -31,4 +31,4 @@ isTitle: true
 　　　
 　　
 
-{% fullimage http://ore2d9chp.bkt.clouddn.com/me.jpg, "in ShangHai", "in ShangHai" %}
+{% fullimage https://infos.rtime.xin/me.jpg, "in ShangHai", "in ShangHai" %}
