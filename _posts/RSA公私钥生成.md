@@ -20,12 +20,14 @@ comments: false
 #### 安装OpenSSL ####
 
 　　　　Linux环境可能自带OpenSSL工具，直接键入命令，看命令是否安装。 如果未安装，通过`yum install openssl -y`命令进行安装。
+
 　　　　Window下请下载指定的OpenSSL工具。地址：[http://gnuwin32.sourceforge.net/packages/openssl.htm](http://gnuwin32.sourceforge.net/packages/openssl.htm)
+
 　　　　OpenSSL的官网：[https://www.openssl.org/source/](https://www.openssl.org/source/)
 
 #### 生成公私钥 ####
 
-***下文中的命令都是在OpenSSL窗口中执行。假如出现某个文件不存在的时候，请尝试重启OpenSSL窗口。***
+　　　　***下文中的命令都是在OpenSSL窗口中执行。假如出现某个文件不存在的时候，请尝试重启OpenSSL窗口。***
 　　　　
 ##### 生成RSA私钥 #####
 
@@ -43,19 +45,19 @@ req -new -x509 -key rsa-private.key -days 720 -out rsa-public.cer
 需要验证设置的key密码
 还有几项用户自定义输入项：
 
-           Contry Name (2 letter code) [au]：   CN
+　　　　　　　　Contry Name (2 letter code) [au]：   CN
 
-          State or Province Name (full name)[Some-State]：        SH
+　　　　　　　　State or Province Name (full name)[Some-State]：        SH
 
-          Locality Name （eg.city）【】：    SH
+　　　　　　　　Locality Name （eg.city）【】：    SH
 
          Organation Name（eg.company）【Internet Widgits Pty Ltd】：xxxx
 
-         Organational Unit Name（eg.section）【】：xxxx
+　　　　　　　　Organational Unit Name（eg.section）【】：xxxx
 
-        Common Name（eg.Your name）：Zs
+　　　　　　　　Common Name（eg.Your name）：Zs
 
-         Email Address：xxxxx@163.com 
+　　　　　　　　Email Address：xxxxx@163.com 
 ```
 
 ##### 生成PKCS12私钥文件 #####
