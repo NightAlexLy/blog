@@ -6,6 +6,6 @@ cd D:\gitProject\blog
 git pull origin master  
 git status  
 git add .  
-git commit -m "update doc %currentYMD% "
+git commit -m "update blog %currentYMD% "
 git push origin master 
 pause 
