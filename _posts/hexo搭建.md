@@ -41,7 +41,7 @@ comments: false
 　　Linux下可以通过wget命令直接下载、不需要下载到本地，在上传到远程服务器。
 
 ```
-    yum install -y gcc gcc-c++ make
+	yum install -y gcc gcc-c++ make
 	cd /opt
 	wget https://nodejs.org/dist/v6.11.0/node-v6.11.0.tar.gz
 ```
