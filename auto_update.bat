@@ -8,4 +8,3 @@ git status
 git add .  
 git commit -m "update blog %currentYMD% "
 git push origin master 
-pause 
