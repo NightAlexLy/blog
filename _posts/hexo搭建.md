@@ -84,7 +84,7 @@ comments: false
     //安装git 
     wget http://www.codemonkey.org.uk/projects/git-snapshots/git/git-latest.tar.xz 
     xz -d git-latest.tar.xz
-    tar xzvf git-latest.tar.gz 
+    tar xvf git-latest.tar 
     cd git-{date} 
     autoconf 
     ./configure --with-curl=/usr/local 
