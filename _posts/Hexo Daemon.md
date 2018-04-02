@@ -148,9 +148,8 @@ comments: false
 	tar -zxvf nginx-1.13.0.tar.gz
 	mv nginx-1.13.0 nginx
 	
-	./config --prefix=/usr/local/nginx
+	./configure --prefix=/usr/local/nginx
 	make && make install 
-	mkdir logs
 	ln -s /usr/local/nginx/sbin/nginx /usr/local/bin/nginx
 	
 	#启动
