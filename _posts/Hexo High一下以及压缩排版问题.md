@@ -23,7 +23,7 @@ comments: false
 　　定位到100行左右，添加如下代码：
 　　
 ```
-　　var audios = document.getElementsByTagName("audio");
+var audios = document.getElementsByTagName("audio");
 if(audios.length > 0){
     if(!audios[0].ended){
         return;
