@@ -1,8 +1,8 @@
-
 var gulp = require('gulp');
 var plugins = require('gulp-load-plugins')();
 var ts = require('gulp-typescript');
 var htmlmin = require('gulp-htmlmin');
+var gutil = require('gulp-util');
 
 gulp.task("clean",function() {
     return gulp.src("./dst/*")
@@ -18,13 +18,16 @@ gulp.task("css",["clean"],function(){
 
 gulp.task("js",["clean"],function(){
     var stream = gulp.src(["public/**/*.js","!public/**/*.min.js"])
-        .pipe(ts({
-           target: "es6",
+         .pipe(ts({
+           target: "es5",
            allowJs: true,
            module: "commonjs",
            moduleResolution: "node"
          }))
-        .pipe(plugins.uglify())
+         .pipe(plugins.uglify())
+         .on('error', function (err) {
+                gutil.log(gutil.colors.red('[Error]'), err.toString());
+            })
         .pipe(gulp.dest("./dst/"));
     return stream;
 });
