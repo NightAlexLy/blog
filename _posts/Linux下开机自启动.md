@@ -43,6 +43,7 @@ comments: false
 
 　　编写服务对应的脚本(如下示例Nginx)：           
 ```
+
 #!/bin/sh
 # chkconfig : 345 86 14
 # description:
@@ -79,6 +80,7 @@ case $1 in
      *)
 echo "usage: `basename $0` {start | reload | stop | list | testconfig | version | tailLog | catLog}"
 esac
+
 ```  
 
 　　添加服务        
@@ -88,6 +90,7 @@ esac
     `chkconfig service on`                 
 
 ```
+
 chkconfig 帮助文档
 
 chkconfig --help
