@@ -39,10 +39,11 @@ comments: false
 　　**需要有一定的脚本基础。**                       
 　　cd /etc/rc.d/init.d                           
 　　创建服务对应的脚本：                    
-	touch service               
+　　touch service               
 
 　　编写服务对应的脚本(如下示例Nginx)：           
 ```
+  其中'要替换成`
 
 #!/bin/sh
 # chkconfig : 345 86 14
@@ -60,7 +61,7 @@ case $1 in
         ;;
      'stop')
         echo "stopping nginx...."
-        kill -15 `cat $NGINX_DIR/logs/nginx.pid`
+        kill -15 'cat $NGINX_DIR/logs/nginx.pid'
         ;;
      'list')
         ps aux | egrep '(PID|nginx)'
@@ -78,16 +79,16 @@ case $1 in
         cat $NGINX_DIR/logs/error.log
         ;;
      *)
-echo "usage: `basename $0` {start | reload | stop | list | testconfig | version | tailLog | catLog}"
+echo "usage: 'basename $0' {start | reload | stop | list | testconfig | version | tailLog | catLog}"
 esac
 
-```  
+```
 
 　　添加服务        
 　　`chkconfig add service`            
 
-    设置启动               
-    `chkconfig service on`                 
+　　设置启动               
+　　`chkconfig service on`                 
 
 ```
 
@@ -106,10 +107,10 @@ usage:   chkconfig [--list] [--type <type>] [name]
 
 chkconfig --list
 
-jenkins        	0:off	1:off	2:on	3:on	4:on	5:on	6:off
-mysql          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
-netconsole     	0:off	1:off	2:off	3:off	4:off	5:off	6:off
-network        	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+jenkins         0:off   1:off   2:on    3:on    4:on    5:on    6:off
+mysql           0:off   1:off   2:on    3:on    4:on    5:on    6:off
+netconsole      0:off   1:off   2:off   3:off   4:off   5:off   6:off
+network         0:off   1:off   2:on    3:on    4:on    5:on    6:off
 
 
 运行级别0：系统停机状态，系统默认运行级别不能设为0，否则不能正常启动
