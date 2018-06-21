@@ -26,14 +26,14 @@ comments: false
 　　
 　　下载完成直接解压，双击upupw.exe既可以运行。
 
-　　![upupw console](https://infos.rtime.xin/upupw_console.png)
+　　![upupw console](http://infos.rtime.xin/upupw_console.png)
 　　
 
 #### Hello World####
 　　
 　　打开`upupw`,输入`s1，`开启全部服务。等待完成之后浏览器中输入`http://localhost/`.看到如下页面表示启动应用成功。
 
-　　![](https://infos.rtime.xin/upupw_index.png)
+　　![](http://infos.rtime.xin/upupw_index.png)
 　　
 　　现在，我们来开发一个PHP版本的`HelloWorld`。
 　　在容器的应用部署目录（解压包的`htdocs`目录）下新增一个test.php文件，键入如下代码：

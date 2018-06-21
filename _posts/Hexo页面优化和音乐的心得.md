@@ -22,7 +22,7 @@ comments: false
 
 　　通过`hexo g`命令生成静态页面，随便打开一个`index.html`都可以发现有几百行到上千行的代码，其中大部分都是空白片段。关于大片的空白片段可以通过`gulp`插件进行压缩，下面方法主要是要讲怎么压缩HTML中的JavaScript代码。
 　　插件对于HTML页面进行压缩时，不会对HTML中包含的JavaScript代码进行压缩，参考`浏览器--》反键查看源码`，还是有一些小段的JavaScript代码，对于存在有代码洁癖的程序猿，肯定会去想方设法去优化掉。
-　　![hexo js ](https://infos.rtime.xin/hexo_js.png)
+　　![hexo js ](http://infos.rtime.xin/hexo_js.png)
 　　
 ##### 定位该段JavaScript#####
 　　
@@ -148,4 +148,4 @@ comments: false
 　　
 　　打开网页版的[网易云音乐](http://music.163.com/#/user/home?id=262759259)，搜索“成都-赵雷”，回车。打开控制台，下载歌词封面图片。
 　　
-　　![网易云下载封面图片](https://infos.rtime.xin/wangyi_xiazai.png)
+　　![网易云下载封面图片](http://infos.rtime.xin/wangyi_xiazai.png)

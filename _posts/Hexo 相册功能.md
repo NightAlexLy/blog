@@ -436,7 +436,7 @@ menu： //节点下添加如下一行
 ```
 	通过`Hexo server`启动服务，访问`http://localhost:4000/photos/`即可看到生成的相册界面。
 
-　　![hexo photo](https://infos.rtime.xin/hexo_photo.png)
+　　![hexo photo](http://infos.rtime.xin/hexo_photo.png)
 
 #### 心得 总结####
 

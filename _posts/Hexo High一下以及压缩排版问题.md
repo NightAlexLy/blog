@@ -18,7 +18,7 @@ comments: false
 
 #### Hight一下####
 
-　　[JavaScript源码](https://infos.rtime.xin/high-animation.js)
+　　[JavaScript源码](http://infos.rtime.xin/high-animation.js)
 	
 　　定位到100行左右，添加如下代码：
 　　

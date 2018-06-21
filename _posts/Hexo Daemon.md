@@ -120,7 +120,7 @@ comments: false
 　　　- 重新查看hexo进程号
 　　**如果两次的pid不一样,表示`hexo`进程不存在时，会自动重启、**
 　　
-　　![forever test](https://infos.rtime.xin/forever_test.png)
+　　![forever test](http://infos.rtime.xin/forever_test.png)
 
 #### Nginx静态化####
 
