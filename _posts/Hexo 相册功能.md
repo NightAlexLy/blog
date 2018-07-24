@@ -275,7 +275,7 @@ comments: false
 	};
 ```
 　　`hexo`执行调用`Hexo-generator-photo`插件：
-　　网站根目录的`package.json`文件中天价如下一行：
+　　网站根目录的`package.json`文件中添加如下一行：
 ```
 	"hexo-server": "^0.2.0",  //下面添加,不要遗漏","
 	"hexo-generator-photo":"^0.0.1"
